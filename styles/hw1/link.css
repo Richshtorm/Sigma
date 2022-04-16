@@ -1,0 +1,75 @@
+/*Для блока із посиланнями зробити фоновий колір наступним градієнтом:
+
+Кут нахилу – 45 градусов, #7fffd4 10%, #f0ffff 30% +
+
+Для посилань, які містять htmlweb змінити колір на фіолетовий. +
+
+Для посилань htmlweb, які є першими дочірніми елементами <div> зробити фоновий колір – радіальним
+градієнтом зміщеним центром донизу.+
+
+Для кожного посилання, яке є другим предком і закінчується /сss застосувати стиль при наведенні,
+межа змінюються на схожу: (   )+
+
+Для всіх сестринських посилань поставити колір після відвідування – жовтий.+
+
+При виділенні якоїсь частини останніх дочірніх посилань застосувати зміни до цієї частини – колір шрифту
+зробити жирним та червоним, а колір фону цієї частини – зеленим.+
+*/
+a {
+    padding: 15px 5px;
+    float: left;
+    margin: 5px;
+    border-radius: 50% 20% / 15% 40%;
+}
+
+div.blocklink {
+    overflow: auto;
+    padding: 20px;
+    background: repeating-linear-gradient(45deg, #7fffd4 10%, #f0ffff 30%);
+}
+
+a[href*="htmlweb"] {
+    color: rgb(90, 0, 157);
+}
+
+div > a[href^="https://htmlweb.ua/"]:first-child {
+    background: radial-gradient(at bottom, #7fffd4 10%, #f0ffff 30%);
+}
+
+div > a[href$="/css"]:nth-child(even):hover {
+    border: 8px inset orangered;
+    border-radius: 50% 20% / 15% 40%;
+}
+
+div > a:visited {
+    color: yellow;
+}
+
+div > a:hover:last-child{
+    color: red;
+    font: bold 100% Serif;
+    background: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

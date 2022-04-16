@@ -1,0 +1,62 @@
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+.line {
+    border-top: red 1px solid;
+    width: 100%;
+}
+.orange, .purple, .green, .blue{
+    border: black 1px solid;
+    /*padding: 40px 35px;*/
+    /*margin: 2px;*/
+    padding: 4% 6%;
+    margin: 2px;
+
+}
+
+.container1 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.orange {
+    background-color: orange;
+    margin-left: 20%;
+}
+
+.container2 {
+    display: flex;
+}
+
+.purple {
+    background-color: purple;
+    margin-right: 20%;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+}
+.blue {
+    width: 100%;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+

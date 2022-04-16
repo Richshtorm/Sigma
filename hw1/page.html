@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+    <link rel="stylesheet" type="text/css" href="../styles/hw1/page.css">
+</head>
+<body>
+<!--
+•	    p.new:before +
+•	        abbr: first-line ?????? -----  first-line работает с блочным элементом
+•	    p.new.back: after +
+•	        div: before: first-letter -
+•	    a: hover: before +
+
+1. удалить пробелы
+2. не обязательно но желательно отделить псевдоэлементы ::
+3. "p.new.back: after" - пробел после между классами и удалить перед after
+4. "div::before::first-letter" - В селекторе можно использовать только один псевдоэлемент.
+5. "abbr: first-line" - first-line работает с блочным элементом abbr-строчный элемент
+-->
+<div class="content">
+    <p class="new" >
+        Здесь находится
+        <abbr title="Класс необходим для определения стилей одного или нескольких элементов веб-страницы.">
+            class</abbr> ="new"
+        <span class="back"></span>
+    </p>
+    <a href="####">Больше информации</a>
+</div>
+</body>
+</html>

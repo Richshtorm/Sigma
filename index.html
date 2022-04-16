@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+
+<form>
+    <fieldset class="content">
+        <legend>Регистрация</legend>
+        <label>Имя</label>
+        <input type="text" name="name" minlength="2" maxlength="15" required placeholder="Ваше имя" autofocus>
+        <label>Фамилия</label>
+        <input type="text" name="surname" minlength="2" maxlength="20" required placeholder="Ваша фамилия">
+
+        <div>
+            <label>Пол:</label>
+            <div>
+                <label>
+                    <input type="radio" name="sex" value="мужской" checked>мужской
+                    <div class="radio-control male"></div>
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="женский">женский
+                    <div class="radio-control female"></div>
+                </label>
+                <?php
+                if (name="sex"==value="мужской") {
+                }
+                ?>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="content">
+        <legend>Введете ник и номер телефонва для регистрации</legend>
+        <label>Телефон</label>
+        <div id="numb">
+            <strong>+380</strong>
+            <input type="tel" name="phone" maxlength="9"
+                   pattern="[0-9]{9}" required placeholder="123456789">
+        </div>
+        <label>Ваш Ник</label>
+        <input type="text" name="nick" size="25" required placeholder="формат 'Ivan_123' ">
+        <button type="submit">Тыць</button>
+    </fieldset>
+
+</form>
+</body>
+</html>
+<!--номер телефона-->
+<!--Ник-->
+
